@@ -52,7 +52,10 @@ spring:
         locator:
             discovery:
                 enabled: true
-
+    rabbitmq:
+      username: imanager
+      host: localhost
+      password: imanager
 # ===================================================================
 # To enable SSL, generate a certificate using:
 # keytool -genkey -alias EventModule -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
