@@ -38,5 +38,8 @@
     "clientPackageManager": "yarn",
     "skipClient": true,
     "skipUserManagement": true
+  },
+  "generator-jhipster-entity-audit": {
+    "auditFramework": "javers"
   }
 }
