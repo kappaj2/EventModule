@@ -1,9 +1,11 @@
 package za.co.ajk.incidentman.messaging;
 
+import java.io.Serializable;
+
 import org.springframework.stereotype.Component;
 
 @Component
-public class InboundMessage {
+public class InboundMessage implements Serializable {
     
     private String eventType;
     private String sourceDestination;

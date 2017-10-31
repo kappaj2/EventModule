@@ -8,7 +8,11 @@ import com.rabbitmq.client.Channel;
 
 public interface InboundMessageHandler {
     
-    void receive(Message<InboundMessage> m,
+    void receiveEventInput(Message<InboundMessage> m,
+                                @Header(AmqpHeaders.CHANNEL) Channel channel,
+                                @Header(AmqpHeaders.DELIVERY_TAG) Long deliveryTag);
+    
+    void receiveEventBroadCasts(Message<InboundMessage> m,
                  @Header(AmqpHeaders.CHANNEL) Channel channel,
                  @Header(AmqpHeaders.DELIVERY_TAG) Long deliveryTag);
 }
