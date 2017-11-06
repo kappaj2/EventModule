@@ -37,9 +37,7 @@ spring:
                 binder:
                     brokers: localhost
                     zk-nodes: localhost
-            bindings:
-                output:
-                    destination: topic-jhipster
+
     data:
         mongodb:
             uri: mongodb://localhost:27017
@@ -63,6 +61,7 @@ spring:
       username: imanager
       host: localhost
       password: imanager
+
 # ===================================================================
 # To enable SSL, generate a certificate using:
 # keytool -genkey -alias EventModule -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
